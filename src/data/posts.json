@@ -1,0 +1,82 @@
+[
+  {
+    "postId": "post01",
+    "userId": "user01",
+    "username": "cgrs",
+    "imgUrl": "https://pbs.twimg.com/media/GaidoASbEAM0JLJ?format=jpg&name=large",
+    "title": "First steps in gaming",
+    "content": "Exploring the journey of my favorite games and sharing my progress."
+  },
+  {
+    "postId": "post02",
+    "userId": "user02",
+    "username": "jingg",
+    "imgUrl": "https://img.4gamers.com.tw/ckfinder-vn/image2/auto/2024-04/7Fn4ojpDUUKeElTKmPpBaQ-240402-131758.jpg?versionId=UmzDVxju7mat7SrYYQshbfRZM6GeRqyq",
+    "title": "Advanced Tips for FPS",
+    "content": "Sharing some of my best strategies and techniques for first-person shooters."
+  },
+  {
+    "postId": "post03",
+    "userId": "user03",
+    "username": "something",
+    "imgUrl": "https://cdn.oneesports.co.th/cdn-data/sites/3/2023/06/IMG_2581-2-scaled.jpeg",
+    "title": "Understanding game mechanics",
+    "content": "A deep dive into how game mechanics affect gameplay."
+  },
+  {
+    "postId": "post04",
+    "userId": "user04",
+    "username": "forsaken",
+    "imgUrl": "https://cdn.oneesports.gg/cdn-data/2023/06/Valorant_MastersTokyo2023_PaperRex_f0rsaken_DoubleFist.jpg",
+    "title": "Highlights of recent tournaments",
+    "content": "Recapping my favorite moments from the latest esports tournaments."
+  },
+  {
+    "postId": "post05",
+    "userId": "user05",
+    "username": "mindfreak",
+    "imgUrl": "https://liquipedia.net/commons/images/1/1a/PRX_mindfreak_at_VCT_Pacific_2024_Kickoff.jpg",
+    "title": "My Top Picks for RPGs",
+    "content": "A list of my favorite RPG games and why I love them."
+  },
+  {
+    "postId": "post06",
+    "userId": "user01",
+    "username": "cgrs",
+    "imgUrl": "https://pbs.twimg.com/media/GaidoASbEAM0JLJ?format=jpg&name=large",
+    "title": "Behind the scenes of streaming",
+    "content": "How I set up my stream and the tools I use."
+  },
+  {
+    "postId": "post07",
+    "userId": "user02",
+    "username": "jingg",
+    "imgUrl": "https://img.4gamers.com.tw/ckfinder-vn/image2/auto/2024-04/7Fn4ojpDUUKeElTKmPpBaQ-240402-131758.jpg?versionId=UmzDVxju7mat7SrYYQshbfRZM6GeRqyq",
+    "title": "Tips for new streamers",
+    "content": "Advice on how to grow your audience and make streaming more enjoyable."
+  },
+  {
+    "postId": "post08",
+    "userId": "user03",
+    "username": "something",
+    "imgUrl": "https://cdn.oneesports.co.th/cdn-data/sites/3/2023/06/IMG_2581-2-scaled.jpeg",
+    "title": "Analyzing Valorant's new update",
+    "content": "A detailed look at the new characters and abilities introduced in the latest patch."
+  },
+  {
+    "postId": "post09",
+    "userId": "user04",
+    "username": "forsaken",
+    "imgUrl": "https://cdn.oneesports.gg/cdn-data/2023/06/Valorant_MastersTokyo2023_PaperRex_f0rsaken_DoubleFist.jpg",
+    "title": "Team synergy in esports",
+    "content": "Discussing how teamwork can make or break a game."
+  },
+  {
+    "postId": "post10",
+    "userId": "user05",
+    "username": "mindfreak",
+    "imgUrl": "https://liquipedia.net/commons/images/1/1a/PRX_mindfreak_at_VCT_Pacific_2024_Kickoff.jpg",
+    "title": "Gaming gear I recommend",
+    "content": "Reviewing my favorite gaming gear for the best performance."
+  }
+]

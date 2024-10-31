@@ -1,0 +1,37 @@
+[
+  {
+    "id": "user01",
+    "username": "cgrs",
+    "email": "cgrs@example.com",
+    "password": "password123",
+    "imgUrl": "https://pbs.twimg.com/media/GaidoASbEAM0JLJ?format=jpg&name=large"
+  },
+  {
+    "id": "user02",
+    "username": "jingg",
+    "email": "jingg@example.com",
+    "password": "password456",
+    "imgUrl": "https://img.4gamers.com.tw/ckfinder-vn/image2/auto/2024-04/7Fn4ojpDUUKeElTKmPpBaQ-240402-131758.jpg?versionId=UmzDVxju7mat7SrYYQshbfRZM6GeRqyq"
+  },
+  {
+    "id": "user03",
+    "username": "something",
+    "email": "something@example.com",
+    "password": "password789",
+    "imgUrl": "https://cdn.oneesports.co.th/cdn-data/sites/3/2023/06/IMG_2581-2-scaled.jpeg"
+  },
+  {
+    "id": "user04",
+    "username": "forsaken",
+    "email": "forsaken@example.com",
+    "password": "passwordabc",
+    "imgUrl": "https://cdn.oneesports.gg/cdn-data/2023/06/Valorant_MastersTokyo2023_PaperRex_f0rsaken_DoubleFist.jpg"
+  },
+  {
+    "id": "user05",
+    "username": "mindfreak",
+    "email": "mindfreaks@example.com",
+    "password": "passworddef",
+    "imgUrl": "https://liquipedia.net/commons/images/1/1a/PRX_mindfreak_at_VCT_Pacific_2024_Kickoff.jpg"
+  }
+]
