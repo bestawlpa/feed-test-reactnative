@@ -56,7 +56,9 @@ export default function Login({ navigation }) {
   return (
     <View style={styles.container}>
       <View style={styles.content}>
-        <Image style={styles.logo} source={require("../assets/loga.png")} />
+        <TouchableOpacity onPress={() => navigation.navigate("Home")}>
+          <Image style={styles.logo} source={require("../assets/loga.png")} />
+        </TouchableOpacity>
         <View>
           <View style={styles.containerInput}>
             <TouchableOpacity
@@ -126,11 +128,6 @@ export default function Login({ navigation }) {
             </TouchableOpacity>
           </View>
         </View>
-      </View>
-      <View>
-        <TouchableOpacity onPress={() => navigation.navigate("Home")}>
-          <IconButton icon="home" size={25} />
-        </TouchableOpacity>
       </View>
     </View>
   );

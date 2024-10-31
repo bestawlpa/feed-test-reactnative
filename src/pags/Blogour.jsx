@@ -1,5 +1,12 @@
 import React, { useState, useCallback, useEffect } from "react";
-import { View, Text, StyleSheet, FlatList, Image } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  FlatList,
+  Image,
+  TouchableOpacity,
+} from "react-native";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useFocusEffect } from "@react-navigation/native";
@@ -57,22 +64,49 @@ export default function Blogour({ navigation }) {
       <View style={styles.content}>
         <FlatList
           data={userPosts}
+          showsVerticalScrollIndicator={false}
           renderItem={({ item }) => (
-            <View style={styles.card}>
-              <Text>Post: {item.postId}</Text>
-              <Image
-                source={{ uri: item.imgUrl }}
+            <TouchableOpacity
+              style={styles.card}
+              onPress={() =>
+                navigation.navigate("Detail", { postId: item.postId })
+              }
+            >
+              <View
                 style={{
-                  width: 50,
+                  flexDirection: "row",
+                  marginBottom: 10,
                   height: 50,
-                  objectFit: "cover",
-                  borderRadius: 100,
+                  alignItems: "center",
                 }}
-              />
-              <Text>userId: {item.userId}</Text>
-              <Text>Title: {item.title}</Text>
+              >
+                <Image
+                  source={{ uri: item.imgUrl }}
+                  style={{
+                    width: 50,
+                    height: 50,
+                    objectFit: "cover",
+                    borderRadius: 100,
+                    marginRight: 10,
+                    borderWidth: 3,
+                    borderColor: "#E2D784",
+                  }}
+                />
+                <Text
+                  style={{
+                    color: "#C21010",
+                    fontWeight: "900",
+                    fontSize: 15,
+                  }}
+                >
+                  {item.username}
+                </Text>
+              </View>
+              <Text style={{ fontWeight: "900", marginBottom: 2 }}>
+                {item.title}
+              </Text>
               <Text>Content: {item.content}</Text>
-            </View>
+            </TouchableOpacity>
           )}
           keyExtractor={(item) => item.postId}
         />
@@ -98,7 +132,6 @@ const styles = StyleSheet.create({
   card: {
     marginVertical: 8,
     backgroundColor: "white",
-    width: "full",
     borderRadius: 10,
     padding: 10,
   },

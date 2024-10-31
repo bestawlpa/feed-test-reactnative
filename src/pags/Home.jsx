@@ -33,6 +33,7 @@ export default function Home({ navigation }) {
       <View style={styles.content}>
         <FlatList
           data={posts}
+          showsVerticalScrollIndicator={false}
           renderItem={({ item }) => (
             <TouchableOpacity
               style={styles.card}
@@ -40,7 +41,14 @@ export default function Home({ navigation }) {
                 navigation.navigate("Detail", { postId: item.postId })
               }
             >
-              <View style={{ flexDirection: "row", marginBottom: 10 }}>
+              <View
+                style={{
+                  flexDirection: "row",
+                  marginBottom: 10,
+                  height: 50,
+                  alignItems: "center",
+                }}
+              >
                 <Image
                   source={{ uri: item.imgUrl }}
                   style={{
@@ -48,21 +56,20 @@ export default function Home({ navigation }) {
                     height: 50,
                     objectFit: "cover",
                     borderRadius: 100,
+                    marginRight: 10,
+                    borderWidth: 3,
+                    borderColor: "#E2D784",
                   }}
                 />
                 <Text
-                  style={{
-                    color: "#B8001F",
-                    fontWeight: "800",
-                    fontSize: 15,
-                    marginLeft: 10,
-                    marginTop: 8,
-                  }}
+                  style={{ color: "#C21010", fontWeight: "900", fontSize: 15 }}
                 >
                   {item.username}
                 </Text>
               </View>
-              <Text style={{ fontWeight: "bold" }}>{item.title}</Text>
+              <Text style={{ fontWeight: "900", marginBottom: 2 }}>
+                {item.title}
+              </Text>
               <Text>{item.content}</Text>
             </TouchableOpacity>
           )}

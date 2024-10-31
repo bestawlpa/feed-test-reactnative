@@ -58,26 +58,18 @@ export default function Profile({ navigation }) {
             }}
           >
             <View style={{ alignItems: "center" }}>
-              <View
+              <Image
+                source={{ uri: userData.imgUrl }}
                 style={{
-                  width: 205,
-                  height: 205,
-                  backgroundColor: "#B8001F",
+                  width: 200,
+                  height: 200,
+                  objectFit: "cover",
                   borderRadius: 100,
-                  alignItems: "center",
-                  justifyContent: "center",
+                  borderWidth: 6,
+                  borderColor: "#E2D784",
                 }}
-              >
-                <Image
-                  source={{ uri: userData.imgUrl }}
-                  style={{
-                    width: 200,
-                    height: 200,
-                    objectFit: "cover",
-                    borderRadius: 100,
-                  }}
-                />
-              </View>
+              />
+
               <Text style={styles.name}>{userData.username}</Text>
             </View>
 
