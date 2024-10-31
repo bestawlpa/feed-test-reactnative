@@ -7,6 +7,7 @@ import Login from "./pags/Login";
 import Profile from "./pags/Profile";
 import Blogour from "./pags/Blogour";
 import Search from "./pags/Search";
+import Detail from "./pags/Detail";
 
 const Stack = createNativeStackNavigator();
 
@@ -37,6 +38,11 @@ export default function App() {
         <Stack.Screen
           name="Search"
           component={Search}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Detail"
+          component={Detail}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

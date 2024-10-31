@@ -86,7 +86,7 @@ export default function Profile({ navigation }) {
                 justifyContent: "center",
                 alignItems: "center",
                 width: "full",
-                backgroundColor: "red",
+                backgroundColor: "#C62E2E",
                 paddingHorizontal: 40,
                 borderRadius: 10,
                 color: "white",
@@ -96,7 +96,7 @@ export default function Profile({ navigation }) {
                 onPress={handleLogout}
                 style={{ justifyContent: "center", alignItems: "center" }}
               >
-                <IconButton icon="logout" size={30} />
+                <IconButton icon="logout" size={30} iconColor="white" />
               </TouchableOpacity>
             </View>
           </View>

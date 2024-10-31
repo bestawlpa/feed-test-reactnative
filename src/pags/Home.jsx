@@ -34,7 +34,12 @@ export default function Home({ navigation }) {
         <FlatList
           data={posts}
           renderItem={({ item }) => (
-            <View style={styles.card}>
+            <TouchableOpacity
+              style={styles.card}
+              onPress={() =>
+                navigation.navigate("Detail", { postId: item.postId })
+              }
+            >
               <View style={{ flexDirection: "row", marginBottom: 10 }}>
                 <Image
                   source={{ uri: item.imgUrl }}
@@ -59,7 +64,7 @@ export default function Home({ navigation }) {
               </View>
               <Text style={{ fontWeight: "bold" }}>{item.title}</Text>
               <Text>{item.content}</Text>
-            </View>
+            </TouchableOpacity>
           )}
           keyExtractor={(item) => item.postId}
         />
