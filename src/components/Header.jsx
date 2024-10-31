@@ -1,12 +1,14 @@
 import React from "react";
-import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { View, StyleSheet, TouchableOpacity, Image, Text } from "react-native";
 import { IconButton } from "react-native-paper";
 
 export default function Header({ navigation }) {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.text}>Feed</Text>
+        <View style={styles.logo}>
+          <Text style={styles.text}>Feed</Text>
+        </View>
       </View>
 
       <View style={styles.container_btn}>
@@ -30,7 +32,7 @@ export default function Header({ navigation }) {
 
 const styles = StyleSheet.create({
   container: {
-    height: 100,
+    height: 105,
     flexDirection: "row",
     alignItems: "flex-end",
     justifyContent: "space-between",
@@ -57,7 +59,16 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   text: {
-    fontSize: 30,
-    color: "black",
+    fontSize: 20,
+    color: "white",
+    fontWeight: "800",
+  },
+  logo: {
+    width: 60,
+    height: 60,
+    borderRadius: 100,
+    backgroundColor: "#B30D2D",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });

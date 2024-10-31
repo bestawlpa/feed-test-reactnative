@@ -57,7 +57,7 @@ export default function Profile({ navigation }) {
               height: "80%",
             }}
           >
-            <View>
+            <View style={{ alignItems: "center" }}>
               <View
                 style={{
                   width: 205,
