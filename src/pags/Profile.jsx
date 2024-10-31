@@ -127,8 +127,8 @@ const styles = StyleSheet.create({
     marginTop: 20,
     color: "#F19ED2",
     fontWeight: "900",
-    textShadowColor: "#FCF596", // สีของเงา
-    textShadowOffset: { width: 2, height: 2 }, // ตำแหน่งเงา
+    textShadowColor: "#FCF596",
+    textShadowOffset: { width: 2, height: 2 },
     textShadowRadius: 10,
   },
 });

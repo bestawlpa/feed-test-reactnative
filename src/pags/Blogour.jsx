@@ -34,11 +34,9 @@ export default function Blogour({ navigation }) {
   }, [navigation]);
 
   useEffect(() => {
-    // โหลดข้อมูลโพสต์จากไฟล์ JSON
     const fetchPosts = async () => {
       const data = require("../data/posts.json");
       if (userData) {
-        // กรองโพสต์ให้ตรงกับผู้ใช้ที่ล็อกอินอยู่
         const filteredPosts = data.filter(
           (post) => post.userId === userData.id
         );

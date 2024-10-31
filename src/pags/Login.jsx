@@ -41,11 +41,10 @@ export default function Login({ navigation }) {
 
     if (user) {
       try {
-        // เก็บ userToken และข้อมูลผู้ใช้ใน AsyncStorage
-        await AsyncStorage.setItem("userToken", "someRandomTokenValue"); // เก็บ token เป็นตัวอย่าง
-        await AsyncStorage.setItem("loggedInUser", JSON.stringify(user)); // เก็บข้อมูลผู้ใช้จริง
-        console.log("Login successful!"); // เพิ่มข้อความ log เมื่อ login สำเร็จ
-        navigation.navigate("Home"); // นำทางไปยังหน้า Home
+        await AsyncStorage.setItem("userToken", "someRandomTokenValue");
+        await AsyncStorage.setItem("loggedInUser", JSON.stringify(user));
+        console.log("Login successful!");
+        navigation.navigate("Home");
       } catch (error) {
         console.log("Error saving data", error);
       }
